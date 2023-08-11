@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SEND_BROADCAST" />
+    <uses-permission android:name="android.permission.NOTIFICATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Busappjee"
+        tools:targetApi="31">
+        <activity
+            android:name=".sendNotification"
+            android:exported="false" />
+
+        <receiver android:name=".MyBroadcastReceiver" />
+
+        <activity
+            android:name=".adminMenu"
+            android:exported="false" />
+        <activity
+            android:name=".BuyPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".updateViewPass"
+            android:exported="false" />
+        <activity
+            android:name=".showPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserList"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".eDATA"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".testTransfer"
+            android:exported="false" />
+        <activity
+            android:name=".MainImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FullScreenImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Menu"
+            android:exported="false" />
+        <activity
+            android:name=".UploadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB9zZ-GxU58lIXn6Stp9IQronoKM9VMRzM" />
+    </application>
+
+</manifest>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".adminMenu">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/shape"
+        app:title="Admin Panel"
+        app:titleTextColor="@color/white" />
+
+    <GridLayout
+        android:columnCount="2"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="12dp"
+            android:layout_marginTop="12dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:id="@+id/viewbuyPass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FF5722"
+                android:gravity="center"
+                android:onClick="onClickBuy"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:text="ADD ROUTES"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="12dp"
+            android:layout_marginTop="12dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:id="@+id/viewCurrentPass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFEB3B"
+                android:gravity="center"
+                android:onClick="currentPassClick"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:text="Broadcast Message"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="12dp"
+            android:layout_marginTop="12dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:id="@+id/ViewRoutes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#8BC34A"
+                android:gravity="center"
+                android:onClick="routesClick"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:text="View Current Users"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="12dp"
+            android:layout_marginTop="12dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:id="@+id/ViewHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#733DD5"
+                android:gravity="center"
+                android:onClick="viewdata"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:text="Update User Data"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </GridLayout>
+
+
+</LinearLayout>

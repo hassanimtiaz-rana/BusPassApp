@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Bus Pass App</string>
+    <array name="routes">
+        <item>Route1</item>
+        <item>Route2</item>
+        <item>Route3</item>
+    </array>
+    <array name="duration">
+        <item>1Day</item>
+        <item>2Months</item>
+        <item>4Months</item>
+    </array>
+
+</resources>
